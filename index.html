@@ -10,47 +10,44 @@
   <title>Document</title>
 </head>
 <body>
-    <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="images/image-1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/image-2.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="images/image-3.jpg" alt=""></div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
-
-
-
-  
-  <h1>TEST</h1>
-  <div id="golobal-container">
+  <div id="global-container">
     <div id="container">
-      <div class="mobile-menu__cover"></div>
+      <!-- <div class="mobile-menu__cover"></div>
       <div class="header">
         <button class="btn filled">CONTACT</button>
         <button class="btn filled">もっと詳しく</button>
         <button class="btn filled">もっと詳しく</button>
         <button class="btn close">一覧から探す</button>
 
+      </div> -->
+      <div id="content">
+        <div class="hero">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="hero__title">Enjoy Rich</div>
+                <img src="images/image-1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">Fantastic</div>
+                <img src="images/image-2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title">Experience</div>
+                <img src="images/image-3.jpg" alt="">
+              </div>           
+            </div>
+            <div class="hero__footer">
+              <img class="hero__downarrow" src="images/arrow.svg">
+              <span class="hero__scrolltext">scroll</span>
+            </div>
+         </div>
+        </div>
       </div>
-
     </div>
-
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 
   
 </body>
