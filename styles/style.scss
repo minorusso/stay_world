@@ -1,8 +1,8 @@
 @import 'modules/variables';
 // キーフレームを使うため
 @import 'modules/mixin';
-
 @import 'modules/hero-slider';
+@import 'modules/text-animation';
 
 @import "breakpoints/base";
 
@@ -58,5 +58,7 @@
     }
   }
 }
+
+
 
 
