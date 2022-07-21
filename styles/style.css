@@ -922,7 +922,7 @@ img {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .houses {
+.mb-lg, .travel, .houses, .popular__btn {
   margin-bottom: 80px !important;
 }
 
@@ -1352,7 +1352,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-lg, .main-title {
     font-size: 36px;
   }
-  .mb-lg, .houses {
+  .mb-lg, .travel, .houses, .popular__btn {
     margin-bottom: 150px !important;
   }
   .pb-lg, .hero {
