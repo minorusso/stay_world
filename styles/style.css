@@ -45,6 +45,7 @@
 
 .hero {
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .hero__title {
@@ -929,7 +930,7 @@ img {
   padding-bottom: 16px !important;
 }
 
-.pb-lg {
+.pb-lg, .hero {
   padding-bottom: 80px !important;
 }
 
@@ -961,10 +962,6 @@ img {
 
 .purple {
   color: #904669;
-}
-
-#content {
-  padding-top: 100px;
 }
 
 #main-content {
@@ -1358,7 +1355,7 @@ Stylesheet: 960px以上のモニタで適用
   .mb-lg, .houses {
     margin-bottom: 150px !important;
   }
-  .pb-lg {
+  .pb-lg, .hero {
     padding-bottom: 150px !important;
   }
   .header__nav {
@@ -1366,6 +1363,10 @@ Stylesheet: 960px以上のモニタで適用
   }
   .mobile-menu__btn {
     display: none;
+  }
+  .swiper-slide {
+    -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
   }
   .travel__img {
     height: 400px;
