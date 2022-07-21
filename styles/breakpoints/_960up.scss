@@ -24,6 +24,18 @@ Stylesheet: 960px以上のモニタで適用
   padding-bottom: 150px !important;
 }
 
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
 
 .travel {
   &__img {

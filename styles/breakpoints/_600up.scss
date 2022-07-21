@@ -35,7 +35,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     justify-content: space-between;
   }
   &__item {
-      flex-basis: 47%;
-      
+      flex-basis: 47%;     
+  }
+}
+
+.footer {
+  & .logo {
+    justify-content: flex-start;
+  }
+
+  &__li {
+    margin-left: 0;
+    margin-right: 30px;
   }
 }
