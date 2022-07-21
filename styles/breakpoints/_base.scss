@@ -49,6 +49,7 @@ img {
   @extend .font-lg;
   font-weight: 600;
   margin-bottom: 0;
+  display: block;
 }
 
 .sub-title {
@@ -67,6 +68,13 @@ img {
 
 #content {
   padding-top: $navHeight;
+}
+
+#container {
+  background-color: $cWhite;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .header {
