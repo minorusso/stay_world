@@ -61,8 +61,43 @@ img {
   flex-direction: column;
 }
 
+.purple {
+  color: $cWineRed;
+}
+
+.travel {
+  @extend .content-width;
+
+  &__inner {
+    @extend .flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $cBgGray;
+  }
+
+  &__sub {
+    @extend .mb-sm;
+  }
+
+  &__img {
+    height: 300px;
+    @extend .mb-sm;
+
+    & > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__texts {
+    @extend .pb-sm;
+  }
+}
+
 .houses {
   @extend .content-width;
+  @extend .mb-lg;
 
   &__inner {
     @extend .flex;
@@ -77,6 +112,53 @@ img {
     text-align: center;
     // ボタンのみ１行で表示
     flex-basis: 100%;
+  }
+}
+
+.popular {
+  &__inner {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background-color: $cBgGray;
+
+    }
+  }
+
+  &__header {
+    @extend .content-width;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+    @extend .flex;
+    @extend .content-width;
+    @extend .pb-sm;
+  }
+  &__title {
+    @extend .font-md;
+    @extend .mb-sm;
+  }
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  &__img {
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    & > img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
