@@ -65,9 +65,13 @@ class Main {
   _init() {
     new MobileMenu();
     this.hero = new HeroSlider('.swiper');
-    this._scrollInit();
+    Pace.on('done', this._paceDone.bind(this))
   }
   
+  _paceDone() {
+    this._scrollInit();
+  }
+
   _inviewAnimation(el, inview) {
     if (inview) {
       el.classList.add('inview');
