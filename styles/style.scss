@@ -35,34 +35,34 @@
   @import 'breakpoints/print';
 }
 
-.header {
-  & .btn {
-    position: relative;
-    display: inline-block;
-    // background-color: $cWhite;
-    border: 1px solid $cBlack;
-    font-weight: 600;
-    padding: 10px 40px;
-    margin: 10px auto;
-    cursor: pointer;
-    transition: all 0.3s;
-    color: $cBlack;
-    text-decoration: none !important;
+// .header {
+//   & .btn {
+//     position: relative;
+//     display: inline-block;
+//     // background-color: $cWhite;
+//     border: 1px solid $cBlack;
+//     font-weight: 600;
+//     padding: 10px 40px;
+//     margin: 10px auto;
+//     cursor: pointer;
+//     transition: all 0.3s;
+//     color: $cBlack;
+//     text-decoration: none !important;
 
-    &.filled{
-      background-color: $cBlack;
-      color: $cWhite;
-      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+//     &.filled{
+//       background-color: $cBlack;
+//       color: $cWhite;
+//       box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 
-      &:hover {
-        background-color: $cWhite;
-        color: $cBlack;
-        box-shadow: none;
-      }
+//       &:hover {
+//         background-color: $cWhite;
+//         color: $cBlack;
+//         box-shadow: none;
+//       }
 
-    }
-  }
-}
+//     }
+//   }
+// }
 
 
 

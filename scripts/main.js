@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 class Main {
   constructor() {
     this.header = document.querySelector('.header');
+    this.sides = document.querySelectorAll('.side');
     this._observers = [];
     this._init();
   }
@@ -88,6 +89,14 @@ class Main {
     }
   }
 
+  _sideAnimation(el, inview) {
+    if (inview) {
+      this.sides.forEach(side => side.classList.add('inview'));
+    } else {
+      this.sides.forEach(side => side.classList.remove('inview'));
+    }
+  }
+
   _textAnimation(el, inview) {
     if (inview) {
       const ta = new TweenTextAnimation(el);
@@ -104,11 +113,12 @@ class Main {
   }
 
   _scrollInit() {
-    this._observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), { once: false });
+    this._observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), {once: false});
     this._observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
     this._observers = new ScrollObserver('.appear', this._inviewAnimation);
-    this._observers = new ScrollObserver('.tween-animate-title', this._textAnimation);
-    this._observers = new ScrollObserver('.swiper', this._toggleSlideAnimation.bind(this), { once: false });
+    this._observers = new ScrollObserver('.tween-animate-title', this._textAnimation, {rootMargin: "-200px 0px"} );
+    this._observers = new ScrollObserver('.swiper', this._toggleSlideAnimation.bind(this), {once: false});
+    this._observers = new ScrollObserver('#main-content', this._sideAnimation.bind(this), {once: false, rootMargin: "-300px 0px"});
   }
 }
 
