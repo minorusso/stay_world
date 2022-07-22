@@ -53,6 +53,14 @@ class Main {
     this._init();
   }
 
+  set observers(val) {
+    this._observers.push(val);
+  }
+
+  get observers() {
+    return this._observers;
+  }
+
   
   _init() {
     new MobileMenu();
@@ -92,14 +100,10 @@ class Main {
   }
 
   _scrollInit() {
-    this._observers.push(
-      new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), { once: false })
-    );
-    this._observers.push(
-      new ScrollObserver('.cover-slide', this._inviewAnimation)
-    );
-    new ScrollObserver('.tween-animate-title', this._textAnimation);
-    new ScrollObserver('.swiper', this._toggleSlideAnimation.bind(this), { once: false });
+    this._observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), { once: false });
+    this._observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
+    this._observers = new ScrollObserver('.tween-animate-title', this._textAnimation);
+    this._observers = new ScrollObserver('.swiper', this._toggleSlideAnimation.bind(this), { once: false });
   }
 }
 
