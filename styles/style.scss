@@ -1,11 +1,13 @@
 @import 'modules/variables';
 // キーフレームを使うため
 @import 'modules/mixin';
+@import 'modules/appear';
 @import 'modules/hero-slider';
 @import 'modules/text-animation';
 @import 'modules/image-slide';
 @import 'modules/button';
 @import 'modules/mobile-menu';
+
 
 @import "breakpoints/base";
 

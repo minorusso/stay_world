@@ -106,6 +106,7 @@ class Main {
   _scrollInit() {
     this._observers = new ScrollObserver('.nav-trigger', this._navAnimation.bind(this), { once: false });
     this._observers = new ScrollObserver('.cover-slide', this._inviewAnimation);
+    this._observers = new ScrollObserver('.appear', this._inviewAnimation);
     this._observers = new ScrollObserver('.tween-animate-title', this._textAnimation);
     this._observers = new ScrollObserver('.swiper', this._toggleSlideAnimation.bind(this), { once: false });
   }
